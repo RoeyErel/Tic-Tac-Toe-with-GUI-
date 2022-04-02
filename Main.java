@@ -18,7 +18,15 @@ import javax.swing.SwingConstants;
 public class Main {
 	
 	/**
-	 * 
+	 * @param _nextPlayer - the next player to play.
+	 * @param _movesMade - number of moves made.
+	 * @param gameBoard - Represent the board.
+	 * @param _player1Score - Player 1 score.
+	 * @param _player2Score - Player 2 score.
+	 * @param xScore - X player score.
+	 * @param oScore - O player score.
+	 * @param player1 - Name of the first player.
+	 * @param player2 - Name of the second player.
 	 */
 	private JFrame frame;
 	private String _nextPlayer = "F";
@@ -30,6 +38,7 @@ public class Main {
 	private JTextField oScore;
 	private JTextField player1;
 	private JTextField player2;
+	
 	/**
 	 * Launch the application.
 	 */
@@ -557,6 +566,7 @@ public class Main {
 		
 		/**
 		 * First player, the X player
+		 * Name can be edited
 		 */
 		player1 = new JTextField("PLAYER 1");
 		player1.setFont(new Font("Calibri", Font.BOLD, 30));
@@ -570,7 +580,8 @@ public class Main {
 		panel_11.setLayout(new BorderLayout(0, 0));
 		
 		/**
-		 * Second player, the O player
+		 * Second player, the O player.
+		 * Name can be edited
 		 */
 		player2 = new JTextField("PLAYER 2");
 		player2.setFont(new Font("Calibri", Font.BOLD, 30));
